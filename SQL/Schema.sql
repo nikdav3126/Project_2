@@ -27,6 +27,8 @@ where title = 'Good News, Bad News';
 ALTER TABLE Episode_info
 ADD PRIMARY KEY (seid);
 
+Drop table Scripts;
+
 ---Create table to use with scripts csv
 Create table Scripts (
 	index int,
@@ -91,3 +93,15 @@ Drop Column index;
 ALTER TABLE Wiki_data
 ADD PRIMARY KEY (seid);
 
+---Create Table for actor_character
+Create table Actor_char(
+	Actor varchar,
+	Character varchar,
+	Script_name varchar
+);
+
+---Create table for guest stars
+Create table Guest_star(
+	Actor varchar,
+	Title varchar
+);
