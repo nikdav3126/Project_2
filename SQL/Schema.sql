@@ -94,9 +94,10 @@ ALTER TABLE Wiki_data
 ADD PRIMARY KEY (seid);
 
 ---Create Table for actor_character
+Drop table Actor_char;
 Create table Actor_char(
 	Actor varchar,
-	Character varchar,
+	Character_name varchar,
 	Script_name varchar
 );
 
