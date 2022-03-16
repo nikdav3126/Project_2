@@ -103,6 +103,6 @@ Create table Actor_char(
 
 ---Create table for guest stars
 Create table Guest_star(
-	Actor varchar,
+	Actor varchar, 
 	Title varchar
 );
